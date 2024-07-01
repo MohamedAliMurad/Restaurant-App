@@ -48,8 +48,19 @@ input {
     border-radius: 5px;
     cursor: pointer;
     width: 70%;
+    text-decoration: none;
 }
 
 button:hover {
     background-color: #e03c00;
+}
+
+.text-link {
+    color: white;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    /* text-decoration: underline; */
+    color: white ;
 }

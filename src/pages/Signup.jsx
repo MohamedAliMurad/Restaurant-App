@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/Signup.css';
+import { useHistory } from 'react-router-dom'; // Import useHistory hook
 
 const Signup = () => {
     const [name, setName] = useState('');
@@ -7,6 +8,7 @@ const Signup = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const history = useHistory(); // Define history variable using useHistory hook
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -65,7 +67,7 @@ const Signup = () => {
                         />
                     </div>
                     <p style={{ color: 'red' }}>{error}</p>
-                    <button type="submit">Signup</button>
+                    <button type="submit" onClick={() => history.push('/login')}>Signup</button>
                 </form>
             </div>
         </div>

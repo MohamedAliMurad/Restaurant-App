@@ -24,7 +24,7 @@ export default function About() {
             </div>
             <div className="col-lg-6 align-self-center gy-5 content">
               <h2>Best Food In The Country</h2>
-              <p className='text-center'>
+              <p className=''>
                 Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore,
                 Sequi Corrupti Corporis Quaerat Voluptatem Ipsam Neque Labore Modi
                 Autem, Saepe Numquam Quod Reprehenderit Rem? Tempora Aut Soluta

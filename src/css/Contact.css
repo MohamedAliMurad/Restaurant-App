@@ -1,12 +1,13 @@
 /* Contact */
 
 .contact {
+    /* padding: 2rem 0; */
+    min-height: calc(100vh - 80px);
     background-color: #f4f4f4;
-    height: calc(100vh - 50px);
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .contact .title h2 {
@@ -48,23 +49,3 @@
 .contact .btn-contact:hover {
     background-color: #e03c00;
 }
-
-.contact .form input {
-    border: none;
-    border-radius: 5px;
-}
-
-.contact .form textarea {
-    border: none;
-    border-radius: 5px;
-}
-
-.contact .form .input-group-text  {
-    height: 50px;
-}
-
-.contact .form .input-group-text input {
-
-}
-
-

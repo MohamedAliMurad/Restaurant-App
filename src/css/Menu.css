@@ -1,0 +1,79 @@
+/* Menu */
+
+.menus {
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.menus .title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.menus .menu-item {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menus .line1,
+.menus .line2 {
+    width: 80px;
+    height: 3px;
+    background-color: #ff4e00;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.menus .line2 {
+    width: 50px;
+}
+
+.menus .menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menus .menu-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.menus .desc {
+    padding: 1rem;
+}
+
+.menus .desc h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.menus .desc p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menus .price {
+    font-size: 1.2rem;
+    color: #ff4e00;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.menus .btn-order {
+    background-color: #ff4e00;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.menus .btn-order:hover {
+    background-color: #e03c00;
+}

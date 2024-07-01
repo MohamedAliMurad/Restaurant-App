@@ -80,7 +80,7 @@ export default function Nav() {
                                                 <Link to="favorites"><i className="fa-solid fa-heart"></i></Link>
                                             </div>
                                             <div className="circle">
-                                                <Link to="shopping"><i className="fa-solid fa-cart-shopping"></i></Link>
+                                                <Link to="my-orders"><i className="fa-solid fa-cart-shopping"></i></Link>
                                             </div>
                                         </> :
                                         <div className="input-group w-100">

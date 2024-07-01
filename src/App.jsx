@@ -7,13 +7,13 @@ import Layout from './pages/Layout.jsx';
 import Review from './pages/Review.jsx';
 import Order from './pages/Order.jsx';
 import Login from './pages/Login.jsx';
-import Shopping from './pages/Shopping.jsx';
 import Contact from './components/Contact.jsx';
 import Favorites from './pages/Favorites.jsx';
 import Signup from './pages/Signup.jsx';
 import NotFound from './pages/NotFound.jsx';
 import { useContext, useState } from 'react';
 import { LoginContext } from './Context.jsx';
+import MyOrders from './pages/MyOrders.jsx';
 
 function App() {
   // const { login } = useContext(LoginContext);
@@ -33,7 +33,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="favorites" element={<Favorites />} />
             <Route path="signup" element={<Signup />} />
-            <Route path="shopping" element={<Shopping />} />
+            <Route path="my-orders" element={<MyOrders />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
