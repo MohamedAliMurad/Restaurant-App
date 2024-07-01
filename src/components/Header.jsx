@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Header.css'
 import img from '../assets/home-img-1.png'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
@@ -22,7 +23,9 @@ export default function Header() {
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                     Ratione esse doloribus quam?
                                 </p>
-                                <button className="btn-photo">Order Now</button>
+                                <Link to="/order">
+                                    <button className="btn-photo">Order Now</button>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12">

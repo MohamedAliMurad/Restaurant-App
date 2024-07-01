@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/About.css'
 import img from '../assets/about-img.png'
+import { Link } from 'react-router-dom'
 
 export default function About() {
   return (
@@ -46,7 +47,9 @@ export default function About() {
                   <span>24/7 Service</span>
                 </div>
               </div>
-              <button className="btn-photo btn-learn mt-2">Learn More</button>
+              <Link to='/learn-more' className="btn-photo btn-learn mt-2">
+                <button className='button'>Learn More</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../css/Signup.css';
-import { useHistory } from 'react-router-dom'; // Import useHistory hook
+import { Link, Route } from 'react-router-dom';
+// import { Route, useHistory } from 'react-router-dom'; // Import useHistory hook
 
 const Signup = () => {
     const [name, setName] = useState('');
@@ -8,7 +9,7 @@ const Signup = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
-    const history = useHistory(); // Define history variable using useHistory hook
+    // const history = useHistory(); // Define history variable using useHistory hook
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -16,13 +17,15 @@ const Signup = () => {
             setError('Passwords do not match');
             return;
         }
-        else{
+        else {
             setError('');
         }
         // Handle signup logic here
         console.log('Name:', name);
         console.log('Email:', email);
         console.log('Password:', password);
+        console.log('Confirm Password:', confirmPassword);
+        // history.push('/login'); // Redirect to login page
     };
 
     return (
@@ -66,8 +69,11 @@ const Signup = () => {
                             required
                         />
                     </div>
+                    <div className="form-group">
                     <p style={{ color: 'red' }}>{error}</p>
-                    <button type="submit" onClick={() => history.push('/login')}>Signup</button>
+                    <button type="submit">Signup</button>
+                    </div>
+                    <Link to="/login" className='text-login'>Already have an account? Login</Link>
                 </form>
             </div>
         </div>

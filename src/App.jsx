@@ -11,9 +11,9 @@ import Contact from './components/Contact.jsx';
 import Favorites from './pages/Favorites.jsx';
 import Signup from './pages/Signup.jsx';
 import NotFound from './pages/NotFound.jsx';
-import { useContext, useState } from 'react';
-import { LoginContext } from './Context.jsx';
+import {  useState } from 'react';
 import MyOrders from './pages/MyOrders.jsx';
+import LearnMore from './pages/LearnMore.jsx';
 
 function App() {
   // const { login } = useContext(LoginContext);
@@ -34,6 +34,7 @@ function App() {
             <Route path="favorites" element={<Favorites />} />
             <Route path="signup" element={<Signup />} />
             <Route path="my-orders" element={<MyOrders />} />
+            <Route path="learn-more" element={<LearnMore />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
