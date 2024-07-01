@@ -66,3 +66,34 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.text-signup:hover {
+  color: #ff4e00;
+  text-decoration: underline !important;
+}
+
+.text-signup {
+  margin-top: 20px;
+  text-decoration: none !important;
+  color: gray;
+}
+
+.google-login-button  {
+  margin-top: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+
+}
+
+.google-login-button:hover {
+  color: #e03c00;
+  text-decoration: underline;
+}
+
+.google-login-button .icon {
+  /* width: 20px; */
+  margin-right: 10px;
+}

@@ -42,21 +42,28 @@
 
 .navbar .icons {
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 
 .navbar .circle {
-    width: 80px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #ff4e00;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 1rem;
+    cursor: pointer;
+
 }
 
 .navbar .circle i {
     color: #ff4e00;
+    font-size: 1rem;
+    transition: 0.5s;
+    padding: 10px;
 }
 
 .circle i:hover {
@@ -73,7 +80,17 @@
 .icons .input-group input{
     border: none;
     border: 1px solid #ff4e00;
-    border-radius: .25rem;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 0;
+    margin-left: .5rem;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    transition: 0.5s;
+    align-self: center;
+    justify-self: center;
+
 }
 
 @media screen and (max-width: 768px) {

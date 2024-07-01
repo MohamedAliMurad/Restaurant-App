@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../css/Login.css';
 import { Link } from 'react-router-dom';
+import { auth, provider, signInWithPopup } from '../Firebase.js';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -11,6 +12,17 @@ const Login = () => {
         // Handle login logic here
         console.log('Email:', email);
         console.log('Password:', password);
+    };
+
+    const handleGoogleLogin = async () => {
+        try {
+            const result = await signInWithPopup(auth, provider);
+            const user = result.user;
+            console.log('Google User:', user);
+            // Handle successful login with Google user
+        } catch (error) {
+            console.error('Error during Google login:', error);
+        }
     };
 
     return (
@@ -37,8 +49,12 @@ const Login = () => {
                         />
                     </div>
                     <button type="submit">Login</button>
+                <div onClick={handleGoogleLogin} className="google-login-button ">
+                    <i className="fab fa-google icon"></i>
+                    <span>Login with Google</span>
+                </div>
                 </form>
-                <Link to="/signup">Don't have an account? Signup</Link>
+                <Link to="/signup" className='text-signup'>Don't have an account? Signup</Link>
             </div>
         </div>
     );
