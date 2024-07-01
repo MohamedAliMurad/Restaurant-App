@@ -1,0 +1,104 @@
+/* Dishes */
+
+.dishes-view {
+
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.dishes {
+    padding: 4rem 0;
+    width: 100%;
+    /* margin-top: 2rem; */
+}
+
+.dishes .title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.dishes .line1,
+.dishes .line2 {
+    width: 80px;
+    height: 3px;
+    background-color: #ff4e00;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.dishes .line2 {
+    width: 50px;
+}
+
+.dishes .title h3 {
+    font-size: 1.5rem;
+}
+
+.dishes .dish {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.dishes .dish:hover {
+    transform: translateY(-10px);
+}
+
+.dishes .icon-dish .circle {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ff4e00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+}
+
+.dishes .icon-dish .left-dish {
+    left: 15px;
+}
+
+.dishes .icon-dish .right-dish {
+    right: 15px;
+}
+
+.dishes .icon-dish .circle i {
+    color: #ff4e00;
+}
+
+.dishes .image {
+    height: 150px;
+}
+
+.dishes .image img {
+    max-height: 100%;
+    width: auto;
+}
+
+.dishes .desc-dish {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.dishes .star i {
+    color: #ff4e00;
+}
+
+.dishes .btn-add {
+    background-color: #ff4e00;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dishes .btn-add:hover {
+    background-color: #e03c00;
+}
