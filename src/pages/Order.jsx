@@ -80,7 +80,7 @@ export default function Order() {
                   <input
                     type="date"
                     className="form-control"
-                    placeholder="Additional Quantity"
+                    placeholder="Enter Date"
                   />
                 </div>
                 <div className="input-group mb-3">
